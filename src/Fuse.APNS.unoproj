@@ -1,0 +1,26 @@
+{
+  "Copyright": "Copyright (c) Fusetools AS 2017",
+  "Description": "Support for Push Notifications On Mobile",
+  "Publisher": "Fusetools AS",
+  "Version": "1.0.0-rc2",
+  "Package": {
+    "ProjectUrl": "https://fusetools.com"
+  },
+  "Packages": [
+    "Uno.Collections",
+    "Uno.Threading",
+    "Fuse.Platform",
+    "Fuse.Controls",
+    "Fuse.Elements",
+    "Fuse.Reactive",
+    "Fuse.Scripting",
+    "Fuse.Common"
+  ],
+  "Includes": [
+    "Common.uno:Source",
+    "JS.uno:Source",
+    "Impl.uno:Source",
+    "AppDelegateAPNService.h:CHeader:iOS",
+    "AppDelegateAPNService.mm:CSource:iOS",
+  ]
+}
