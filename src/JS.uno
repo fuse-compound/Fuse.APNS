@@ -9,6 +9,19 @@ using Fuse.Reactive;
 
 namespace Fuse.APNS
 {
+	/**
+		@scriptmodule APNS
+
+		Handles push notification from Apple's Push Notification Service
+
+		@include Docs/Guide.md
+
+		## Remarks
+
+		This module is an @EventEmitter, so the methods from @EventEmitter can be used to listen to events.
+
+		You need to add a project reference to `Fuse.APNS` in your unoproj file to use this feature.
+	*/
 	[UXGlobalModule]
 	public sealed class APNSModule : NativeEventEmitterModule
 	{
