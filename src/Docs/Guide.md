@@ -10,7 +10,7 @@ Include the Fuse push notification library by adding the following to your `.uno
 
 ## How this behaves in your app
 
-Referencing `Fuse.PushNotifications` will do the the following:
+Referencing `Fuse.APNS` will do the the following:
 
 - When your app starts it registers with APNS. As all access is controlled through Apple's certificate system there is no extra info to provide (we will mention server side a bit later)
 - You get a callback telling you if the registration succeeded or failed.
