@@ -132,5 +132,12 @@ namespace Fuse.APNS
 		@}
 
 		public extern(!iOS) static void ClearAllNotifications() { }
+
+		public extern(iOS) static void Register()
+		{
+			iOSImpl.RegisterForPushNotifications();
+		}
+
+		public extern(!iOS) static void Register() { }
 	}
 }

@@ -55,6 +55,7 @@ namespace Fuse.APNS
 			AddMember(onRegistrationFailed);
 			AddMember(new NativeFunction("clearBadgeNumber", ClearBadgeNumber));
 			AddMember(new NativeFunction("clearAllNotifications", ClearAllNotifications));
+			AddMember(new NativeFunction("register", Register));
 
 			Fuse.APNS.APNService.ReceivedNotification += OnReceivedNotification;
 			Fuse.APNS.APNService.RegistrationSucceeded += OnRegistrationSucceeded;
@@ -113,6 +114,18 @@ namespace Fuse.APNS
 		public object ClearAllNotifications(Context context, object[] args)
 		{
 			Fuse.APNS.APNService.ClearAllNotifications();
+			return null;
+		}
+
+		/**
+			@scriptmethod register
+
+			Registers the app with APNS. Only neccesary if APNS.RegisterOnLaunch was
+			set to false in the unoproj file.
+		*/
+		public object Register(Context context, object[] args)
+		{
+			Fuse.APNS.APNService.Register();
 			return null;
 		}
 	}
