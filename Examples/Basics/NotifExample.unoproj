@@ -4,6 +4,11 @@
     "FuseJS",
     "Fuse.BasicTheme"
   ],
+  "iOS": {
+    "SystemCapabilities": {
+      "Push": true
+    }
+  },
   "Projects": [
     "../../src/Fuse.APNS.unoproj",
   ],
