@@ -20,6 +20,7 @@
     "Common.uno:Source",
     "JS.uno:Source",
     "Impl.uno:Source",
+    "Impl.uxl:Extensions",
     "AppDelegateAPNService.h:CHeader:iOS",
     "AppDelegateAPNService.mm:CSource:iOS",
   ]
